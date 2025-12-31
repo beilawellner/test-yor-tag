@@ -90,6 +90,8 @@ resource "aws_sns_topic" "hhc" {
     git_org   = "SEA"
     git_repo  = "cloud-analytics"
     yor_trace = "954e452d-8731-439c-9524-780a932f07aa"
+    }, {
+    reason = "test"
   })
   kms_master_key_id = "alias/aws/sns"
 }
