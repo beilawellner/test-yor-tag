@@ -77,6 +77,7 @@ resource "google_storage_bucket" "flowbucket" {
   name          = "${local.resource_prefix}-flowlogs"
   location      = var.region
   force_destroy = true
+  public_access_prevention = "enforced"
 }
 
 
